@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en" ng-app="myBlog">
+  <head>
+    <meta charset="utf-8">
+    <title>News Feed | My Blog</title>
+
+    <!-- build:css styles.css -->
+    <link rel="stylesheet" href="src/app.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- build:js main.js -->
+    <script src="src/app.module.js"></script>
+    <script src="src/app.config.js"></script>
+    <script src="src/core/core.module.js"></script>
+    <script src="src/core/post/post.module.js"></script>
+    <script src="src/core/post/post.service.js"></script>
+    <script src="src/core/user/user.module.js"></script>
+    <script src="src/core/user/user.service.js"></script>
+    <script src="src/core/comment/comment.module.js"></script>
+    <script src="src/core/comment/comment.service.js"></script>
+    <script src="src/post-list/post-list.module.js"></script>
+    <script src="src/post-list/post-list.component.js"></script>
+    <script src="src/post-detail/post-detail.module.js"></script>
+    <script src="src/post-detail/post-detail.component.js"></script>
+    <script src="src/user-detail/user-detail.module.js"></script>
+    <script src="src/user-detail/user-detail.component.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+  </body>
+</html>

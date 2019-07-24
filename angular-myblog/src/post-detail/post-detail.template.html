@@ -1,0 +1,22 @@
+<b><p>Post ID: {{$ctrl.post.id}}<p></b>
+<b>Posted By: <a href="#!/users/{{$ctrl.post.userId}}">User{{$ctrl.post.userId}}</a></b>
+
+
+<br/>
+<h3>{{$ctrl.post.title}}</h3>
+<p>{{$ctrl.post.body}}</p>
+<br/>
+<div class="page-header"><h4>Comments</h4></div>
+<br/>
+
+<ul class="comments">
+  <li ng-repeat="comment in $ctrl.comments" class="thumbnail">
+    Comment ID: {{comment.id}}
+    <br/>
+    <b>{{comment.name}}</b>
+    <br/>
+    <a>{{comment.email}}</a>
+    <br/>
+    <p>{{comment.body}}</p>
+  </li>
+</ul>

@@ -1,0 +1,30 @@
+<b><p>User ID: {{$ctrl.user.id}}<p></b>
+<b>Name: {{$ctrl.user.name}}</b>
+<br/>
+Username: {{$ctrl.user.username}}
+<br/>
+Email: <a>{{$ctrl.user.email}}</a>
+<br/>
+Address: {{$ctrl.user.address}}
+<br/>
+
+<br/>
+<div class="page-header"><h4>Posts</h4></div>
+<br/>
+
+
+<ul class="posts">
+  <li ng-repeat="post in $ctrl.posts | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+    
+    
+    <b><p>Post ID: <a href="#!/posts/{{post.id}}">{{post.id}}</a><p></b>
+      <b>Posted By: <a href="#!/users/{{post.userId}}">User{{post.userId}}</a></b>
+      
+      
+      <br/>
+      <h3>{{post.title}}</h3>
+      <p>{{post.body}}</p>
+
+
+  </li>
+</ul>

@@ -1,0 +1,25 @@
+{
+  "name": "angular-myblog",
+  "description": "training project using angularJS, npm, bower, json-server and grunt",
+  "main": "",
+  "authors": [
+    "Abdullah Kamran"
+  ],
+  "license": "ISC",
+  "homepage": "http://localhost:8000/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.7.x",
+    "bootstrap": "3.3.x",
+    "bootstrap-table": "1.14.2",
+    "angular-resource": "1.7.x",
+    "angular-route": "1.7.x"
+  }
+}
